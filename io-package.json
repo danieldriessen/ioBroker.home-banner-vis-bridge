@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "home-banner-vis-bridge",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "title": "Home-Banner VIS Bridge",
     "titleLang": {
       "en": "Home-Banner VIS Bridge",
