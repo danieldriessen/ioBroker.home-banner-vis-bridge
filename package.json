@@ -1,0 +1,33 @@
+{
+  "name": "iobroker.home-banner-vis-bridge",
+  "version": "0.0.1",
+  "description": "ioBroker adapter: render VIS/VIS-2 views for Home-Banner LED matrix displays.",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "dev-server": "dev-server",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldriessen/ioBroker.home-banner-vis-bridge.git"
+  },
+  "keywords": [
+    "iobroker",
+    "adapter",
+    "home-banner",
+    "vis",
+    "vis-2",
+    "hub75",
+    "led-matrix"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.3.2",
+    "playwright": "^1.58.2",
+    "ws": "^8.19.0"
+  }
+}
+

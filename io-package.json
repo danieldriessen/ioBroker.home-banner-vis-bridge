@@ -1,0 +1,70 @@
+{
+  "common": {
+    "name": "home-banner-vis-bridge",
+    "version": "0.0.1",
+    "title": "Home-Banner VIS Bridge",
+    "titleLang": {
+      "en": "Home-Banner VIS Bridge",
+      "de": "Home-Banner VIS Bridge"
+    },
+    "desc": {
+      "en": "Renders ioBroker VIS/VIS-2 views to a small LED-matrix-friendly image stream for Home-Banner devices.",
+      "de": "Rendert ioBroker VIS/VIS-2-Views als LED-Matrix-tauglichen Bildstream für Home-Banner-Geräte."
+    },
+    "authors": [
+      "DD Productions"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "loglevel": "info",
+    "icon": "home-banner.png",
+    "keywords": [
+      "home-banner",
+      "vis",
+      "vis-2",
+      "led-matrix",
+      "hub75"
+    ],
+    "type": "visualization",
+    "compact": true,
+    "tier": 3,
+    "connectionType": "local",
+    "dataSource": "push",
+    "adminUI": {
+      "config": "json"
+    },
+    "enabled": true,
+    "readme": "https://github.com/danieldriessen/ioBroker.home-banner-vis-bridge",
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.0.23"
+      }
+    ]
+  },
+  "native": {
+    "listenHost": "0.0.0.0",
+    "listenPort": 8787,
+    "authToken": "",
+    "canvasWidth": 384,
+    "canvasHeight": 64,
+    "captureMinIntervalMs": 200,
+    "captureMaxIntervalMs": 2000,
+    "autoReloadMs": 0,
+    "cacheBustOnReload": false,
+    "defaultView": "",
+    "activeView": "",
+    "views": []
+  },
+  "objects": [],
+  "instanceObjects": []
+}
+
