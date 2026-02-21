@@ -18,6 +18,14 @@
   "auto_reload_ms_help": "Wenn >0, lädt der Renderer die VIS-Seite periodisch neu. Hilfreich, wenn VIS-View-Änderungen nicht automatisch in offenen Clients erscheinen. 0 deaktiviert.",
   "cache_bust_on_reload": "Cache-Bust bei Reload",
   "cache_bust_on_reload_help": "Hängt beim Reload einen Zeitstempel als Query-Parameter an, um Caching zu umgehen. Hinweis: VIS classic nutzt den Query-String zur Projektauswahl; nur aktivieren, wenn deine URL den Query-String nicht dafür verwendet.",
+  "max_active_views": "Max. aktive gerenderte Views",
+  "max_active_views_help": "Maximale Anzahl von Views, die gleichzeitig gerendert werden dürfen (über alle Clients). Bei Überschreitung erhalten Clients einen klaren Fehler.",
+  "inactive_grace_ms": "Grace-Periode inaktiv (ms)",
+  "inactive_grace_ms_help": "Nach dem letzten Unsubscribe bleibt die View noch so lange aktiv (hilft bei schnellen Layout-Wechseln).",
+  "close_page_after_inactive_ms": "View-Seite schließen nach inaktiv (ms)",
+  "close_page_after_inactive_ms_help": "Wenn eine View so lange inaktiv ist, wird die Playwright-Page geschlossen um CPU zu sparen. Der Browser bleibt laufen.",
+  "close_browser_after_inactive_ms": "Browser schließen nach inaktiv (ms)",
+  "close_browser_after_inactive_ms_help": "Wenn alle Views so lange inaktiv sind, wird Chromium komplett beendet um CPU zu minimieren. Reaktivierung dauert etwas länger, aber Idle-CPU geht gegen 0. 0 deaktiviert.",
   "default_view": "Standard-View-ID (optional)",
   "default_view_help": "Wird verwendet, wenn noch keine aktive View gewählt ist. Muss einer View-ID unten entsprechen.",
   "views_help": "Eine oder mehrere VIS/VIS-2-View-URLs hinzufügen. Der Adapter rendert die aktive View und stellt das letzte Bild per HTTP bereit (mit ETag). Empfehlung: View in VIS exakt in Canvas-Größe gestalten (z. B. 384×64).",
@@ -26,6 +34,8 @@
   "view_id": "ID",
   "view_id_tooltip": "Eindeutiger Schlüssel für diese View. Wird vom activeView-State verwendet.",
   "view_name": "Name",
-  "view_url": "URL"
+  "view_url": "URL",
+  "view_busy_fps": "Busy FPS",
+  "view_busy_fps_tooltip": "Ziel-Capture-Rate während sich die View sichtbar ändert. Höher = flüssiger, höhere CPU-Last. Stabile Views werden automatisch ausgedünnt."
 }
 

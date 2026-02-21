@@ -1,6 +1,6 @@
 {
   "name": "iobroker.home-banner-vis-bridge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ioBroker adapter: render VIS/VIS-2 views for Home-Banner LED matrix displays.",
   "license": "MIT",
   "main": "main.js",

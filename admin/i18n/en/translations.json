@@ -18,6 +18,14 @@
   "auto_reload_ms_help": "If >0, the renderer reloads the VIS page periodically. Useful when VIS view edits don’t propagate to already-open clients. 0 disables.",
   "cache_bust_on_reload": "Cache-bust on reload",
   "cache_bust_on_reload_help": "Append a timestamp query parameter on reload to avoid stale caching. Note: VIS classic uses the query string for project selection; enable this only if your URL does not rely on the query string.",
+  "max_active_views": "Max active rendered views",
+  "max_active_views_help": "Maximum number of views that may be rendered concurrently (across all clients). Exceeding this limit returns a clear error to clients.",
+  "inactive_grace_ms": "Inactive grace period (ms)",
+  "inactive_grace_ms_help": "After the last client unsubscribes, keep the view active for this long (helps quick layout switches).",
+  "close_page_after_inactive_ms": "Close view page after inactive (ms)",
+  "close_page_after_inactive_ms_help": "After a view has been inactive for this long, close its Playwright page to reduce CPU. The browser stays running.",
+  "close_browser_after_inactive_ms": "Close browser after inactive (ms)",
+  "close_browser_after_inactive_ms_help": "After all views have been inactive for this long, close Chromium entirely to minimize CPU. Resume will be slower, but idle CPU approaches zero. Set 0 to disable.",
   "default_view": "Default view id (optional)",
   "default_view_help": "Used when no active view is selected yet. Must match one of the View IDs below.",
   "views_help": "Add one or more VIS/VIS-2 view URLs. The adapter renders the active view and serves the latest frame via HTTP (ETag-enabled). Recommended: design the VIS view to exactly match the canvas size (e.g. 384×64).",
@@ -26,6 +34,8 @@
   "view_id": "ID",
   "view_id_tooltip": "Unique key for this view. Used by the activeView state.",
   "view_name": "Name",
-  "view_url": "URL"
+  "view_url": "URL",
+  "view_busy_fps": "Busy FPS",
+  "view_busy_fps_tooltip": "Target capture rate while the view is changing. Higher = smoother updates, higher CPU. Stable views automatically back off."
 }
 

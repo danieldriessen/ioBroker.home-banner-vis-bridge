@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "home-banner-vis-bridge",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "title": "Home-Banner VIS Bridge",
     "titleLang": {
       "en": "Home-Banner VIS Bridge",
@@ -60,6 +60,10 @@
     "captureMaxIntervalMs": 2000,
     "autoReloadMs": 0,
     "cacheBustOnReload": false,
+    "maxActiveViews": 2,
+    "inactiveGraceMs": 5000,
+    "closePageAfterInactiveMs": 15000,
+    "closeBrowserAfterInactiveMs": 30000,
     "defaultView": "",
     "activeView": "",
     "views": []
